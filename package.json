@@ -1,6 +1,6 @@
 {
-  "name": "expiry",
-  "version": "1.0.0",
+  "name": "dairy",
+  "version": "0.1.0",
   "description": "keep it fresh",
   "main": "index.js",
   "scripts": {
