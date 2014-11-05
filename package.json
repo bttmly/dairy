@@ -1,0 +1,14 @@
+{
+  "name": "expiry",
+  "version": "1.0.0",
+  "description": "keep it fresh",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -R spec test.js"
+  },
+  "author": "Nick Bottomley (github.com/nickb1080)",
+  "license": "MIT",
+  "dependencies": {
+    "keyed-queue": "^1.0.0"
+  }
+}
