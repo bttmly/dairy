@@ -1,16 +1,16 @@
 var KeyedQueue = require("keyed-queue");
 
-function Expiry (duration, interval) {
+function Diary (timeToLive, checkInterval) {
 
-  duration = Number(duration);
-  interval = Number(interval || 1000);
+  timeToLive = Number(timeToLive);
+  checkInterval = Number(checkInterval || 1000);
 
   if (isNaN(duration)) {
-    throw new TypeError("Expiry() requires a numeric duration value.");
+    throw new TypeError("Diary() requires a numeric duration value.");
   }
 
   if (isNaN(interval)) {
-    throw new TypeError("Expiry() requires a numeric interval value.");
+    throw new TypeError("Diary() requires a numeric interval value.");
   }
 
   var queue = KeyedQueue();
@@ -60,5 +60,6 @@ function Expiry (duration, interval) {
 
 }
 
+module.exports = Dairy;
 
 
