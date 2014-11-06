@@ -4,11 +4,17 @@
   "description": "keep it fresh",
   "main": "index.js",
   "scripts": {
-    "test": "mocha -R spec test.js"
+    "build": "coffee -c -o ./lib ./src",
+    "test": "mocha --compilers coffee:coffee-script/register ./test -R spec"
   },
   "author": "Nick Bottomley (github.com/nickb1080)",
   "license": "MIT",
   "dependencies": {
     "keyed-queue": "^1.0.0"
+  },
+  "devDependencies": {
+    "chai": "^1.9.2",
+    "coffee-script": "^1.8.0",
+    "mocha": "^2.0.1"
   }
 }
